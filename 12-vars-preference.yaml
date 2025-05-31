@@ -11,8 +11,8 @@
      private: false
   tasks:
    - name: print greeting
-     vars:
-      Greeting: "Hello from task"
+    #  vars:
+    #   Greeting: "Hello from task"
      ansible.builtin.debug:
      #variable must be surrounded in double quotes
       msg: "my name is {{Greeting}}"
