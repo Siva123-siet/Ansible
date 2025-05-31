@@ -10,8 +10,8 @@
       Person: Ram
      #variable must be surrounded in double quotes
       msg: "my name is {{Person}}"
-      
-   - name: print person name
+
+   - name: print person name again
      ansible.builtin.debug:
      #variable must be surrounded in double quotes
       msg: "my name is {{Person}}"
