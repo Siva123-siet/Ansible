@@ -16,3 +16,10 @@
      ansible.builtin.debug:
      #variable must be surrounded in double quotes
       msg: "my name is {{Greeting}}"
+
+# 1. command line or args
+# 2. Task
+# 3. File
+# 4. prompt
+# 5. Play
+# 6. inventory
