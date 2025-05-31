@@ -4,7 +4,13 @@
   vars:
    Person : Siva # equal to name=Siva in shell
   tasks:
-   - name: print hello world
+   - name: print person name
      ansible.builtin.debug:
      #variable must be surrounded in double quotes
       msg: "my name is {{Person}}"
+  tasks:
+   - name: print person name again
+     ansible.builtin.debug:
+     #variable must be surrounded in double quotes
+      msg: "my name is {{Person}}"
+
