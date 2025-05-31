@@ -7,9 +7,9 @@
    COURSENAME: "Devsecops with AWS"
    IS_LIVE: true
    Tools:
-    -Linux
-    -shellscript
-    -ansible
+    - Linux
+    - shellscript
+    - ansible
    CONCEPTS:
     CI: Jenkins
     SCRIPT: "shell, Ansible, Python, Terraform"
