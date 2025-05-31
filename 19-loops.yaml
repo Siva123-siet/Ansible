@@ -1,0 +1,12 @@
+- name: loops
+  hosts: frontend
+  become: yes
+  tasks:
+   - name: Installing & Uninstalling packages using loop
+     ansible.builtin.package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+     loop:
+     - {name: sql , state: present}
+     - {name: mysql, state: absent}
+     - {name: zip, state: absent}
