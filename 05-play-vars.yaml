@@ -7,4 +7,4 @@
    - name: print hello world
      ansible.builtin.debug:
      #variable must be surrounded in double quotes
-      msg: "my name is {Person}}"
+      msg: "my name is {{Person}}"
