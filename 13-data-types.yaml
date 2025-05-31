@@ -17,5 +17,5 @@
   tasks:
    - name: printing datatypes
      ansible.builtin.debug:
-      msg: "course is {{COURSE}} , coursename is {{COURSENAME}} , is_live is {{IS_LIVE}} ,tools is {{Tools}} , concepts is {{CONCEPTS}} "
+      msg: "course is {{COURSE}} , coursename is {{COURSENAME}} , is_live is {{IS_LIVE}} ,tools are {{Tools}} , concepts are {{CONCEPTS}} "
      
