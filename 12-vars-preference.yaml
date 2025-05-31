@@ -5,10 +5,10 @@
    Greeting : "Hello from play" # equal to name=Siva in shell
   # vars_files:
   #  - course.yaml
-  vars_prompt:
-   - name: Greeting
-     prompt: please enter greeting
-     private: false
+  # vars_prompt:
+  #  - name: Greeting
+  #    prompt: please enter greeting
+  #    private: false
   tasks:
    - name: print greeting
     #  vars:
