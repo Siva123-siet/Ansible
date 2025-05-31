@@ -1,8 +1,8 @@
 - name: Nginx installation and run
   hosts: frontend
+  become: yes
   tasks:
    - name: Installing nginx server
      ansible.builtin.package:
       name: nginx
-      become: yes
       state: present
