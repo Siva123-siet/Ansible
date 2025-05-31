@@ -1,8 +1,8 @@
 - name: play level variables
   hosts: local
   connection: local
-  vars:
-   Greeting : "Hello from play" # equal to name=Siva in shell
+  # vars:
+  #  Greeting : "Hello from play" # equal to name=Siva in shell
   # vars_files:
   #  - course.yaml
   # vars_prompt:
