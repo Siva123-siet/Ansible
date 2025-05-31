@@ -1,6 +1,6 @@
 - name: variables from inventory
-  hosts: ram
-  connection: ram
+  hosts: local
+  connection: local
   tasks:
   - name: print course info
     ansible.builtin.debug:
