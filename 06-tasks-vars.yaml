@@ -1,0 +1,17 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars:
+   Person : Siva # equal to name=Siva in shell
+  tasks:
+   - name: print person name
+     ansible.builtin.debug:
+     vars:
+      Person: Ram
+     #variable must be surrounded in double quotes
+      msg: "my name is {{Person}}"
+      
+   - name: print person name
+     ansible.builtin.debug:
+     #variable must be surrounded in double quotes
+      msg: "my name is {{Person}}"
