@@ -45,3 +45,9 @@
       person: SIVAKUMAR
      ansible.builtin.debug:
       msg: "Hello , {{person | lower}}"
+
+   - name: check ip address is valid or not
+     vars:
+      ipaddress: 192.168.0.1
+     ansible.builtin.debug:
+      msg: "{{ipaddress | ansible.utils.ipaddr}}"
