@@ -33,3 +33,15 @@
        - {'key': 'trainer', 'value': 'Sivakumar'}
      ansible.builtin.debug:
       msg: "Hello , {{course | items2dict }}"
+
+   - name: convert name into uppercase
+     vars:
+      person: sivakumar
+     ansible.builtin.debug:
+      msg: "Hello , {{person | upper}}"
+
+   - name: convert name into lowercase
+     vars:
+      person: SIVAKUMAR
+     ansible.builtin.debug:
+      msg: "Hello , {{person | lower}}"
