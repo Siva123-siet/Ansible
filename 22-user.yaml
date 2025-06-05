@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   tasks:
-  - name: check robo user exists or not
-    ansible.builtin.command: id robo
+  - name: check chitti user exists or not
+    ansible.builtin.command: id chitti
     register: output
     ignore_errors: true
 
@@ -13,7 +13,7 @@
 
   - name: create user
     become: yes
-    ansible.builtin.command: useradd robo
+    ansible.builtin.command: useradd chitti
     when: output.rc!=0
 
   - name: user already exists
