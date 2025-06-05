@@ -5,9 +5,11 @@
   - name: check robo user exists or not
     ansible.builtin.command: id robo
     register: output
-    ansible.builtin.debug:
-     msg: "{{ register }}"
     ignore_errors: true
+
+  - name: print the outcome
+    ansible.builtin.debug: 
+     msg: "{{ output }}"
 
   - name: create user
     become: yes
