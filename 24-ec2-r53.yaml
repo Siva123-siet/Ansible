@@ -3,9 +3,9 @@
   connection: local
   vars:
    instances:
-   - mysql
-   - backend
-   - frontend
+   - cart
+   - catalogue
+   - frontendd
    subnet_id: subnet-0672304bccb3af6e8
    sg_id: sg-0c4434e3941ebbcca
    zone: daws-84s.store
